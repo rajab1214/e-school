@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="file.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+   
+    <header>
+        <nav>
+            <div class="left"><img src="Images/logo.png" alt="" height="40px" width="40px"></div>
+            <div class="right">
+                <ul>
+                    <li>Search: &nbsp &nbsp<input type="text" placeholder="School Name"></li>
+                    <li>Calender: &nbsp &nbsp <input type="date" id="birthday" name="birthday"></li>
+                    <li>Flag</li>
+                    <li><button>Task</button></li>
+                    <li>User Profile</li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- <div w3-include-html="sidebar.html"></div> -->
+    <div id="sidebarContainer"></div>
+    <script>
+        // Use jQuery to load the content of sidebar.html into the #sidebarContainer
+        $(function () {
+            $('#sidebarContainer').load('sidebar.html');
+        });
+    </script>
+    
+</body>
+
+</html>

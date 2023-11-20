@@ -1,0 +1,95 @@
+
+    body {
+        background-color: rgb(3, 3, 31);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 46);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 40px;
+    }
+/* here the sidebar css */
+ 
+      .sidenav {
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(18, 18, 46);
+        overflow-y: auto;
+        padding-top: 20px;
+        /* margin-top: 80px; */
+      }
+  
+      /* Style the sidenav links and the dropdown button */
+      .sidenav a,
+      .dropdown-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fffbfb;
+        display: block;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        border: 3px solid black;
+        outline: none;
+        
+      }
+  
+      /* On mouse-over */
+      .sidenav a:hover,
+      .dropdown-btn:hover {
+        color:  #747070;
+      }
+  
+      /* Main content */
+      .main {
+        margin-left: 250px;
+        /* Same as the width of the sidenav */
+        font-size: 20px;
+        /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+  
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: rgb(13, 13, 46);
+        color: white;
+      }
+  
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+      display: none;
+        background-color: rgb(56, 55, 55);
+        padding-left: 8px;
+      }
+  
+      /* Optional: Style the caret down icon */
+      .fa-angle-right {
+        float: right;
+        padding-right: 8px;
+      }
